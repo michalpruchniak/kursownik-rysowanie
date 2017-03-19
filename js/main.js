@@ -15,3 +15,11 @@ ctx.lineTo(60, 250);
 ctx.lineTo(20, 150);
 ctx.closePath();
 ctx.stroke();
+
+ctx.beginPath();
+ctx.arc(300, 150, 100, Math.PI/180*45, Math.PI/180*-125, true);
+ctx.stroke();
+ctx.beginPath();
+ctx.moveTo(200, 250);
+ctx.bezierCurveTo(200, 100, 400, 400, 400, 250);
+ctx.stroke();
