@@ -36,3 +36,15 @@ ctx.lineTo(200, 350);
 ctx.lineTo(150, 350);
 ctx.fill();
 ctx.stroke();
+ctx.fillStyle="#83e8ee";
+ctx.fillRect(10, 20, 120, 120);
+ctx.strokeStyle="#3cb865";
+ctx.strokeRect(150, 20, 120, 120);
+
+ctx.lineWidth = 10;
+ctx.strokeStyle = "#5ebff1";
+ctx.strokeRect(10, 160, 80, 80);
+
+ctx.lineJoin = 'round';
+ctx.strokeStyle = "#8af9ce";
+ctx.strokeRect(120, 160, 80, 80);
