@@ -48,3 +48,10 @@ ctx.strokeRect(10, 160, 80, 80);
 ctx.lineJoin = 'round';
 ctx.strokeStyle = "#8af9ce";
 ctx.strokeRect(120, 160, 80, 80);
+
+my_gradient = ctx.createLinearGradient(10, 310, 450, 10);
+my_gradient.addColorStop(0, "#8af9ce");
+my_gradient.addColorStop(0.35, "#6dcae8");
+my_gradient.addColorStop(1, "#d7b052");
+ctx.fillStyle = my_gradient;
+ctx.fillRect(0, 0, 500, 500);
