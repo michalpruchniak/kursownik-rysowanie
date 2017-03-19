@@ -4,7 +4,7 @@ my_canvas.height = 500;
 document.body.appendChild(my_canvas);
 
 var ctx = my_canvas.getContext('2d');
-// ctx.fillRect(20, 20, 100, 100);
+ctx.fillRect(20, 20, 100, 100);
 ctx.strokeRect(140, 20, 50, 50);
 ctx.clearRect(60, 30, 100, 50);
 
@@ -22,4 +22,17 @@ ctx.stroke();
 ctx.beginPath();
 ctx.moveTo(200, 250);
 ctx.bezierCurveTo(200, 100, 400, 400, 400, 250);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.moveTo(40, 300);
+ctx.lineTo(300, 320);
+ctx.lineTo(400, 380);
+ctx.bezierCurveTo(400, 500, 60, 500, 40, 350);
+ctx.lineTo(40, 300);
+ctx.moveTo(150, 350);
+ctx.lineTo(175, 400);
+ctx.lineTo(200, 350);
+ctx.lineTo(150, 350);
+ctx.fill();
 ctx.stroke();
